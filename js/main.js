@@ -37,10 +37,10 @@ function getComment() {
 }
 
 function getPhotoDescription(index) {
-  const id = index + 1;
+  const userId = index + 1;
 
   return {
-    photoId: id,
+    photoId: userId,
     url: `photos/${id}.jpg`,
     description: description,
     likes: likes[getRandomInt(0, likes.length - 1)],
